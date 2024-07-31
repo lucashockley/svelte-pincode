@@ -152,6 +152,7 @@
       .getData("text")
       .split("")
       .filter((it) => it !== " ");
+    focusLastInput();
   }
 
   $: _type.set(type);
