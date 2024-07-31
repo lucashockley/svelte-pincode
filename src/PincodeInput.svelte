@@ -71,7 +71,7 @@
       return;
     }
 
-    if (e.key !== KEYBOARD.TAB) {
+    if (e.key !== KEYBOARD.TAB || modifierKeyDown) {
       e.preventDefault();
 
       if (type === 'numeric' && /^[0-9]$/.test(e.key)) {
